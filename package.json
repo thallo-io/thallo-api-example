@@ -1,0 +1,25 @@
+{
+  "name": "thallo-api-example",
+  "version": "1.0.0",
+  "description": "This repo contains a working example of interacting with the Thallo API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thallo-io/thallo-api-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thallo-io/thallo-api-example/issues"
+  },
+  "homepage": "https://github.com/thallo-io/thallo-api-example#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "ethers": "^5.7.2",
+    "ts-node": "^10.9.1"
+  }
+}
