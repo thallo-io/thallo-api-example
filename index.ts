@@ -48,6 +48,8 @@ async function run() {
         vintage_id: vintage.vintage_id,
         sell_order_id: sellOrder.sell_order_id,
         expected_price_cents: sellOrder.price_cents,
+        external_retiree_id: "external_retiree_id", // retiree id provided by user which is making request
+        external_id: "unique_external_id" // unique external id which can be used only once and must be unique in every single request
     })).data.retirement_request_id
 
     console.log(`retirementRequestId: ${retirementRequestId}`)
