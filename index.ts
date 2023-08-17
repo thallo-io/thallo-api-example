@@ -42,6 +42,10 @@ async function run() {
         throw new Error('Sell order price too high')
     }
 
+    // get inventory before credits retirement
+    const inventory = await httpClient.get('/api/inventory').data.projects
+    console.log('Your inventory', inventory)
+
     // request retirement
     const retirementRequestId = (await httpClient.post('api/caas/request-retirement', {
         quantity_grams: '20',
